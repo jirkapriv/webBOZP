@@ -292,3 +292,10 @@ h1 {
     font-size: 0.75rem;
   }
 }
+
+@media (max-width: 500px) {
+
+  nav > div > a {
+    font-size: 0.5rem;
+  }
+}
