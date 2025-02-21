@@ -265,7 +265,7 @@ h1 {
   }
 
   nav > div > a {
-    font-size: 0.8rem;
+    font-size: 0.84rem;
     font-weight: bold;
     letter-spacing: 0.3px;
     padding: 0;
@@ -278,7 +278,7 @@ h1 {
 
   #hero h1,
   section h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   #kontaktyTxt > p {
