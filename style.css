@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 html {
@@ -202,6 +203,7 @@ footer {
   color: white;
   padding: 1rem;
   text-align: center;
+  user-select:text;
 }
 
 footer p {
@@ -267,6 +269,7 @@ h1 {
 #kontaktyTxt > p {
   font-weight: bold;
   font-size: 1.5rem;
+  user-select:text;
 }
 
 @media (max-width: 800px) {
