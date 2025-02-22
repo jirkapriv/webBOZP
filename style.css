@@ -114,7 +114,6 @@ button:hover {
 
 section {
   position: relative;
-  /**min-height: 95vh;**/
   padding-top: 60px;
   display: flex;
   flex-direction: column;
@@ -134,9 +133,12 @@ section {
   background-color: #f0f0f0;
   min-height: 90vh;
 }
+
 #hero {
   min-height: 80vh;
+  padding: 5rem;
 }
+
 ul {
   padding-left: 1rem;
   margin: 0;
@@ -145,6 +147,7 @@ ul {
 ul li {
   margin-bottom: 0.5rem;
 }
+
 .checklist li {
   list-style: none;
   margin-bottom: 10px;
@@ -154,10 +157,12 @@ ul li {
   gap: 8px;
   margin-left: 10%;
 }
+
 .checklist li::before {
   content: "✔️";
   color: #970747;
 }
+
 #kontakt p {
   text-align: center;
   font-size: 1.2rem;
@@ -169,6 +174,7 @@ footer {
   background-color: #970747;
   color: white;
 }
+
 .scroll-down {
   position: absolute;
   bottom: 20px;
@@ -209,6 +215,7 @@ nav {
   justify-content: center;
   gap: 20px;
 }
+
 nav a:hover {
   color: #f9f9f9;
 }
@@ -232,6 +239,7 @@ h1 {
   margin: 0 auto;
   transition: 0.3s;
 }
+
 .card {
   background-color: white;
   padding: 20px;
@@ -245,14 +253,17 @@ h1 {
   max-height: 70px;
   cursor: pointer;
 }
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .icon {
   font-size: 1.5rem;
   color: #970747;
 }
+
 #kontaktyTxt > p {
   font-weight: bold;
   font-size: 1.5rem;
@@ -287,15 +298,89 @@ h1 {
 }
 
 @media (max-width: 700px) {
-
   nav > div > a {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .right-nav {
+    gap: 15px;
+  }
+
+  #hero {
+    padding: 2rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 501px) {
+  nav > div > a {
+    font-size: 0.75rem;
+  }
 
+  .right-nav {
+    gap: 12px;
+  }
+
+  header nav {
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  nav > div > a {
+    font-size: 0.7rem;
+    letter-spacing: 0.6px;
+  }
+
+  .right-nav {
+    gap: 7px;
+  }
+
+  header nav {
+    padding: 0.5rem 1.3rem;
+  }
+}
+@media (max-width: 403px) {
+  nav > div > a {
+    font-size: 0.65rem;
+    letter-spacing: 0.6px;
+  }
+
+  .right-nav {
+    gap: 7px;
+  }
+
+  header nav {
+    padding: 0.5rem 1rem;
+  }
+
+  #hero {
+    padding: 1rem;
+  }
+}
+@media (max-width: 380px) {
   nav > div > a {
     font-size: 0.6rem;
+    letter-spacing: 0.6px;
+  }
+
+  .right-nav {
+    gap: 5px;
+  }
+
+  header nav {
+    padding: 0.5rem 0.8rem;
+  }
+}
+@media (max-width: 359px) {
+  nav > div > a {
+    font-size: 0.6rem;
+    letter-spacing: 0.6px;
+  }
+
+  .right-nav {
+    gap: 3px;
+  }
+
+  header nav {
+    padding: 0.5rem 0.5rem;
   }
 }
