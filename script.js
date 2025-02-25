@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Close menu after clicking a link (only on mobile)
-      if (window.innerWidth <= 700) {
+      if (window.innerWidth <= 1200) {
         rightNav.classList.remove("active");
       }
     });
