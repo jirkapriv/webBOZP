@@ -48,7 +48,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 header nav {
@@ -137,7 +137,7 @@ section {
 
 #hero {
   min-height: 80vh;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 ul {
@@ -272,7 +272,16 @@ h1 {
   user-select:text;
 }
 
-@media (max-width: 800px) {
+
+#ImgNextTotext{
+
+display: flex;
+flex-direction: row;
+align-items: center;
+
+}
+
+ @media (max-width: 800px) {
   .grid-container {
     flex-direction: column;
     transform: scale(0.9);
@@ -386,4 +395,22 @@ h1 {
   header nav {
     padding: 0.5rem 0.5rem;
   }
+} 
+
+@media (max-width: 359px) {
+  nav > div > a {
+    font-size: 0.6rem;
+    letter-spacing: 0.6px;
+  }
+
+  .right-nav {
+    gap: 3px;
+  }
+
+  header nav {
+    padding: 0.5rem 0.5rem;
+  }
 }
+
+
+
