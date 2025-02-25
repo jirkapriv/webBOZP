@@ -13,3 +13,6 @@ links.forEach((link) => {
     }
   });
 });
+function toggleMenu() {
+  document.querySelector(".right-nav").classList.toggle("active");
+}
