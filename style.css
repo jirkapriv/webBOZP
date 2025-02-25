@@ -65,7 +65,6 @@ header nav {
 
 .right-nav {
   display: flex;
-  gap: 20px;
 }
 
 nav a {
@@ -337,7 +336,6 @@ align-items: center;
 
   .right-nav a {
     display: block;
-    border-bottom: #f0f0f0 solid;
     padding: 15px;
   }
 
@@ -352,9 +350,7 @@ align-items: center;
 
 
 @media (max-width: 700px) {
-  .right-nav {
-    gap: 15px;
-  }
+
 
   #hero {
     padding: 2rem;
