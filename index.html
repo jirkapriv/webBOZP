@@ -21,7 +21,7 @@
           <a href="#sluzby" class="nadtrh">Služby</a>
           <a href="#zkusenosti" class="nadtrh">Zkušenosti</a>
           <a href="#proc-ja" class="nadtrh">Proč já?</a>
-          <a href="#reference" class="nadtrh">Reference</a>
+          <a href="#reference" class="nadtrh">Reference a galerie</a>
           <a href="#kontakt" class="nadtrh">Kontakt</a>
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -151,34 +151,43 @@
     <section id="reference">
       <br />
       <br />
-      <h2>Moje reference</h2>
+      <h2>Spolupracuji s:</h2>
       <br />
       <br />
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dolore
-      ratione autem labore maxime velit laboriosam eum voluptatem animi
-      voluptatum magni recusandae possimus quibusdam dignissimos nam, ullam
-      officiis at totam? Lorem ipsum dolor sit, amet consectetur adipisicing
-      elit. Ipsam dolore ratione autem labore maxime velit laboriosam eum
-      voluptatem animi voluptatum magni recusandae possimus quibusdam
-      dignissimos nam, ullam officiis at totam? Lorem ipsum dolor sit, amet
-      consectetur adipisicing elit. Ipsam dolore ratione autem labore maxime
-      velit laboriosam eum voluptatem animi voluptatum magni recusandae possimus
-      quibusdam dignissimos nam, ullam officiis at totam? Lorem ipsum dolor sit,
-      amet consectetur adipisicing elit. Ipsam dolore ratione autem labore
-      maxime velit laboriosam eum voluptatem animi voluptatum magni recusandae
-      possimus quibusdam dignissimos nam, ullam officiis at totam? Lorem ipsum
-      dolor sit, amet consectetur adipisicing elit. Ipsam dolore ratione autem
-      labore maxime velit laboriosam eum voluptatem animi voluptatum magni
-      recusandae possimus quibusdam dignissimos nam, ullam officiis at totam?
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dolore
-      ratione autem labore maxime velit laboriosam eum voluptatem animi
-      voluptatum magni recusandae possimus quibusdam dignissimos nam, ullam
-      officiis at totam?
 
-      <p>
+      <p class="spoluprace">
         GasNet, s.r.o., Besoft,S.r.o., Iveco Vysoké Mýto, specSHOP, s.r.o. atd.
       </p>
+      <br />
+      <br />
 
+      <br />
+      <div
+        style="
+          display: flex;
+          gap: 1.2rem;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        "
+      >
+        <img class="fotka" src="FotkyWEB/20230522_095526.jpg" alt="" />
+        <img class="fotka" src="FotkyWEB/20230522_095612.jpg" alt="" />
+        <img class="fotka" src="FotkyWEB/20230606_085636.jpg" alt="" />
+        <img class="fotka" src="FotkyWEB/20230606_112556.jpg" alt="" />
+        <img class="fotka" src="FotkyWEB/20230621_090852.jpg" alt="" />
+        <img class="fotka" src="FotkyWEB/20221101_090500.jpg" alt="" />
+        <img class="fotka" src="FotkyWEB/image.jpg" alt="" />
+        <img class="fotka" src="FotkyWEB/20230522_100024.jpg" alt="" />
+        <img class="fotka" src="FotkyWEB/20240706_105801.jpg" alt="" />
+      </div>
+
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" />
+      </div>
+
+      <br />
+      <br />
 
       <div
         class="scroll-down"
@@ -214,9 +223,12 @@
     </section>
 
     <footer>&copy; 2025 BOZP a PO – Váš bezpečnostní partner</footer>
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
   </body>
 </html>
 <!-- 
 Web made by Jiri Privratsky
 -->
-

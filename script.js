@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const rightNav = document.querySelector(".right-nav");
   const menuToggle = document.querySelector(".menu-toggle");
 
-  // Smooth scroll when clicking menu items
   links.forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
@@ -16,15 +15,34 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
 
-      // Close menu after clicking a link (only on mobile)
       if (window.innerWidth <= 1200) {
         rightNav.classList.remove("active");
       }
     });
   });
-
-  // Toggle menu on click
   menuToggle.addEventListener("click", function () {
     rightNav.classList.toggle("active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".fotka").forEach((img) => {
+    img.addEventListener("click", function () {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+
+      modal.style.display = "flex";
+      modalImg.src = this.src;
+    });
+  });
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+
+  document.getElementById("imageModal").addEventListener("click", function (e) {
+    if (e.target !== document.getElementById("modalImg")) {
+      closeModal();
+    }
   });
 });

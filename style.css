@@ -48,7 +48,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 header nav {
@@ -90,7 +91,12 @@ section h2 {
   margin-bottom: 1rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
-
+.fotka {
+  max-width: 300px;
+}
+.fotka1 {
+  max-width: 500px;
+}
 #hero p {
   color: #333;
   font-size: 1.2rem;
@@ -202,7 +208,7 @@ footer {
   color: white;
   padding: 1rem;
   text-align: center;
-  user-select:text;
+  user-select: text;
 }
 
 footer p {
@@ -268,22 +274,28 @@ h1 {
 #kontaktyTxt > p {
   font-weight: bold;
   font-size: 1.5rem;
-  user-select:text;
+  user-select: text;
 }
-.vedleFotky{
+.vedleFotky {
   padding-top: 2em;
-   padding-left: 1rem;
+  padding-left: 1rem;
 }
 
-#ImgNextTotext{
-
-display: flex;
-flex-direction: row;
-align-items: center;
-
+#ImgNextTotext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.spoluprace{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  user-select: text;
+  text-decoration: underline;
 }
 
- @media (max-width: 800px) {
+@media (max-width: 800px) {
   .grid-container {
     flex-direction: column;
     transform: scale(0.9);
@@ -309,9 +321,11 @@ align-items: center;
   #kontaktyTxt > p {
     font-size: 1.2rem;
   }
+  .spoluprace{
+    font-size: 1rem;
+
+  }
 }
-
-
 
 .menu-toggle {
   display: none;
@@ -348,16 +362,61 @@ align-items: center;
   }
 }
 
-
 @media (max-width: 700px) {
-
-
   #hero {
     padding: 2rem;
   }
 
-  #ImgNextTotext > p{
+  #ImgNextTotext > p {
     font-size: 1rem;
     padding-left: 0;
   }
+}
+
+.fotka {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.fotka:hover {
+  transform: scale(1.05);
+  filter: brightness(85%);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ccc;
 }
